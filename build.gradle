@@ -13,7 +13,9 @@ repositories {
 
 dependencies {
     testImplementation(
-            'org.junit.jupiter:junit-jupiter:5.10.1'
+            'org.junit.jupiter:junit-jupiter:5.10.1',
+            'com.codeborne:selenide:7.10.1',
+            'org.slf4j:slf4j-simple:2.0.17'
     )
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
@@ -24,7 +26,7 @@ tasks.withType(JavaCompile){
 
 test {
     useJUnitPlatform {
-        includeTags System.getProperty('tag', 'smoke')
+        includeTags System.getProperty('tag', 'homeWork')
     }
 
     systemProperty "file.encoding", "UTF-8"

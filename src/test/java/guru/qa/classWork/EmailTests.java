@@ -27,7 +27,7 @@ public class EmailTests {
             @Tag("smoke"),
             @Tag("web"),
     })
-    @DisplayName("Email will should send a banned user")
+    @DisplayName("Email будет отправлен забаненому пользователю")
     void emailShouldBeSentForBannedUser(){
         System.out.println("SentForBannedUser");
     }
