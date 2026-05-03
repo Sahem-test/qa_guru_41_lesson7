@@ -31,3 +31,4 @@ bin/
 /.idea
 *.log
 !build.gradle
+/gradle/wrapper/gradle-wrapper.properties
